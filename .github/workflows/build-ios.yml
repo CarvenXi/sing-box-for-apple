@@ -65,7 +65,7 @@ jobs:
           echo "Building Libbox.xcframework from sing-box repository..."
           
           # Clone sing-box repository
-          git clone --depth 1 --branch dev https://github.com/SagerNet/sing-box.git /tmp/sing-box
+          git clone --depth 1 --branch testing https://github.com/SagerNet/sing-box.git /tmp/sing-box
           cd /tmp/sing-box
           
           # Install gomobile (SagerNet fork required by sing-box)
