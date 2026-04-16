@@ -41,7 +41,7 @@ jobs:
         id: sing-box-version
         run: |
           # Fetch the latest commit SHA from sing-box dev branch
-          SING_BOX_SHA=$(git ls-remote https://github.com/SagerNet/sing-box.git refs/heads/dev | cut -f1)
+          SING_BOX_SHA=$(git ls-remote https://github.com/SagerNet/sing-box.git refs/heads/testing | cut -f1)
           if [ -z "$SING_BOX_SHA" ]; then
             echo "Error: Failed to fetch sing-box commit SHA"
             exit 1
